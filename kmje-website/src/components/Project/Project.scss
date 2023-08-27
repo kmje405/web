@@ -1,0 +1,62 @@
+// Custom variables
+$project-bg: #333;
+$project-card-bg: #444;
+$project-card-border: #555;
+$project-title-color: #fff;
+
+
+// Block: projects-container
+.projects-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Element: project-title under projects-container
+.projects-container__title {
+  width: 50%;
+  height: fit-content;
+  color: $project-title-color;
+  font-size: 2.5rem;
+}
+
+// Block: project-card
+.project-card {
+  border: 1px solid $project-card-border;
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 50% ;
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__description {
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    &:hover {
+      background-color: #fff;
+      color: $project-card-bg;
+    }
+  }
+}
