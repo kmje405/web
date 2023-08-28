@@ -5,6 +5,8 @@ import Home from '../src/components/Home/Home';      // adjust the import to you
 import About from '../src/components/About/About';    // adjust the import to your file structure
 import Contact from '../src/components/Contact/Contact';  // adjust the import to your file structure
 import Project from '../src/components/Project/Project';  // adjust the import to your file structure
+import 'font-awesome/css/font-awesome.min.css';
+
 
 const App: React.FC = () => {
   return (
